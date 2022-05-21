@@ -50,6 +50,10 @@ public class EmployeeService {
                 throw new IllegalStateException("email already taken");
             }
             employee.setEmail(newEmployee.getEmail());
+            employee.setJobTitle(newEmployee.getJobTitle());
+            employee.setImageUrl(newEmployee.getImageUrl());
+            employee.setPhoneNumber(newEmployee.getPhoneNumber());
+
         }
         return employee;
     }
